@@ -1,0 +1,24 @@
+{
+  "name": "digimon-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "/src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [],
+  "author": "Lucas Gabriel Xavier",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0"
+  }
+}
