@@ -10,6 +10,10 @@ const app = express()
 app.use(express.json())
 app.use(express.static('public'))
 
+app.get('/', (req, res)=> {
+  res.sendFile('index.html', {root: 'public'})
+})
+
 //Rota para listar todos os digimons
 app.get('/api/digimons', async (req, res) => {
   const digimons = await prisma.digimon.findMany()
