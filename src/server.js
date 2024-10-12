@@ -1,5 +1,8 @@
 import express from 'express'
 import { PrismaClient } from '@prisma/client'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const prisma = new PrismaClient()
 const app = express()
@@ -21,7 +24,7 @@ app.get('/api/digimons/name/:name', async (req, res) => {
   })
 
   if (!digimon) {
-    return res.status(404).json({ message: 'Digimon não encontrado'});
+    return res.status(404).json({ message: 'Digimon não encontrado' });
   }
   res.json(digimon)
 })
@@ -35,7 +38,7 @@ app.get('/api/digimons/level/:level', async (req, res) => {
   })
 
   if (digimons.length === 0) {
-    return res.status(404).json({ message: 'Não há nenhum Digimon neste nível'});
+    return res.status(404).json({ message: 'Não há nenhum Digimon neste nível' });
   }
   res.json(digimons)
 })

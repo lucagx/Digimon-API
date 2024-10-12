@@ -2,7 +2,7 @@
   "name": "digimon-api",
   "version": "1.0.0",
   "type": "module",
-  "main": "/src/server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "concurrently \"npx prisma studio\" \"nodemon src/server.js\"",
@@ -17,6 +17,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^5.20.0",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1"
   },
   "devDependencies": {
