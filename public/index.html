@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimon API </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Digimon API</h1>
+  <p>Ambiente para teste local da API</p>
+  <br>
+  <div class="tables-container">
+    <div>
+      <h3>Chamadas API e Endpoints</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Método HTTP</th>
+            <th>EndPoint</th>
+            <th>Faz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GET</td>
+            <td>/api/digimon</td>
+            <td>Retorna lista de todos Digimons</td>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/api/digimon/name/:name</td>
+            <td>Retorna Digimon por Nome</td>
+          </tr>
+          <tr>
+            <td>GET</td>
+            <td>/api/digimon/level/:level</td>
+            <td>Retorna lista Digimon por Nível</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrapper">
+      <h3>Campos API</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td>Nome Digimon</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td>level</td>
+            <td>Nível Digimon</td>
+            <td>String</td>
+          </tr>
+          <tr>
+            <td>img</td>
+            <td>Imagen Digimon</td>
+            <td>String</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+  <section>
+    <label for="searchByName">Pesquise por Nome do Digimon: </label>
+    <input id="searchByName" type="text" placeholder="Digite o nome do Digimon">
+    <button id="searchByNameButton">Pesquisar</button>
+  </section>
+
+  <section>
+    <label for="searchByLevel">Pesquise por Nivel do Digimon: </label>
+    <input id="searchByLevel" type="text" placeholder="Digite o nivel do Digimon">
+    <button id="searchByLevelButton">Pesquisar</button>
+  </section>
+
+  <section>
+    <button id="fetchAllDigimons">Buscar Todos os Digimons</button>
+    <button id="fetchRandomDigimon">Buscar Digimon Aleatório</button>
+  </section>
+
+
+  <div id="digimonList"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

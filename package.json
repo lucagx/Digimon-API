@@ -5,7 +5,8 @@
   "main": "/src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "concurrently \"npx prisma studio\" \"nodemon src/server.js\"",
+    "watch": "node --watch src/server.js"
   },
   "engines": {
     "node": ">=14.0.0"

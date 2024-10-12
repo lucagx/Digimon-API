@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+button {
+  background-color: #C7C7CC;
+  color: #3E444A;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 10px;
+  padding: 10px; 
+  margin: 10px;  
+  text-decoration: none;
+}
+
+button:active {
+  background-color: #AEAEB2;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+.tables-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  flex: 1;
+  min-width: 0; 
+}
+
+table {
+  border-collapse: collapse;
+  margin:20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section label {
+  width: 240px; 
+  margin-right: 10px;
+}
+
+
+#digimonList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.digimon-item {
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  flex: 1 1 calc(20% - 20px);
+  max-width: calc(20% - 20px); 
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition for smooth effect */
+}
+
+.digimon-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.digimon-item h3 {
+  margin-bottom: 10px;
+}
+
+.digimon-item p {
+  margin-bottom: 10px;
+}
+
+.digimon-item img {
+  display: block;
+}

@@ -5,6 +5,7 @@ const prisma = new PrismaClient()
 const app = express()
 
 app.use(express.json())
+app.use(express.static('public'))
 
 //Rota para listar todos os digimons
 app.get('/api/digimons', async (req, res) => {
