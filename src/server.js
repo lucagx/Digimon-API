@@ -7,6 +7,12 @@ dotenv.config()
 const prisma = new PrismaClient()
 const app = express()
 
+app.use(cors({
+  origin: 'http://localhost:5173/', // Substitua pelo domínio do seu front-end
+  methods: ['GET'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}) )
+
 app.use(express.json())
 app.use(express.static('public'))
 
