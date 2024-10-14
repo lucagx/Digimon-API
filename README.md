@@ -7,6 +7,8 @@ Esta é uma API para listar e buscar Digimons usando Express e Prisma com MongoD
 - [Express](https://expressjs.com/)   | Framework para gerenciar rotas, requisições e respostas HTTP.
 - [Prisma](https://www.prisma.io/)    | ORM para acesso ao banco de dados.
 - [MongoDB](https://www.mongodb.com/) | MongoDB banco de dados onde esta armazenado as infos sobre os digimons.
+- [cors](https://www.npmjs.com/package/cors) | Middleware para habilitar CORS (Cross-Origin Resource Sharing).
+- [nodemon](https://www.npmjs.com/package/nodemon) | Ferramenta que reinicia automaticamente o servidor Node.js quando arquivos são alterados.
 
 ## Endpoints da API
 

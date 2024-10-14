@@ -9,7 +9,10 @@ const prisma = new PrismaClient()
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://digi-finder.vercel.app' 
+  ],
   methods: ['GET'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }) )
